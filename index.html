@@ -2,119 +2,461 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Patel Sanitary Ware, Kondithope, Chennai. Contact us for sanitaryware enquiries.">
-  <title>Patel Sanitary Ware | Chennai</title>
-  <style>
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,sans-serif;background:#f7f5ef;color:#20312b;line-height:1.6}
-    header{background:#143c32;color:white;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
-    header strong{font-size:19px}
-    header a{color:white;text-decoration:none}
-    .hero{background:#143c32;color:white;padding:65px 7%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
-    .hero h1{font-size:clamp(36px,5vw,58px);line-height:1.12;margin:12px 0}
-    .hero p{color:#dbe7df}
-    .hero img{width:100%;height:320px;object-fit:cover;border-radius:12px}
-    .btn{display:inline-block;background:#d4b477;color:#18372c;padding:13px 18px;border-radius:6px;text-decoration:none;font-weight:bold;margin:8px 8px 0 0}
-    .btn-outline{background:transparent;border:1px solid white;color:white}
-    section{padding:55px 7%}
-    .heading{text-align:center;margin-bottom:30px}
-    .heading h2{font-size:32px;margin-bottom:5px}
-    .muted{color:#65736c}
-    .products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
-    .card{background:white;border:1px solid #e5e5dc;border-radius:10px;overflow:hidden}
-    .card img{width:100%;height:190px;object-fit:cover}
-    .card div{padding:18px}
-    .card h3{margin:0}
-    .card a{color:#176044;font-weight:bold;text-decoration:none}
-    .visit{background:#e9ece4}
-    .contact{background:#143c32;color:white;border-radius:12px;padding:30px}
-    .contact a{overflow-wrap:anywhere}
-    footer{background:#102b26;color:white;padding:24px 7%;font-size:14px}
-    .float{position:fixed;right:16px;bottom:18px;background:#16864b;color:white;padding:13px 17px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 3px 12px #0003}
-    @media(max-width:650px){
-      .hero{grid-template-columns:1fr;padding:42px 6%}
-      .hero img{height:230px}
-      .products{grid-template-columns:1fr}
-      .card img{height:230px}
-      section{padding:42px 6%}
-      header{padding:16px 6%}
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <strong>PATEL SANITARY WARE</strong>
-    <a href="#contact">Contact Us ↗</a>
-  </header>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Patel Sanitary Ware, Kondithope, Chennai. Explore Bhajwad sanitaryware and Plumbtech fittings.">
+<title>Patel Sanitary Ware | Premium Sanitary Showroom</title>
 
-  <main>
+<style>
+:root{
+  --ivory:#f7f3e9;
+  --cream:#eee5d3;
+  --gold:#b89555;
+  --dark:#242a25;
+  --green:#263d32;
+  --muted:#77766e;
+  --white:#fffefa;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:var(--ivory);
+  color:var(--dark);
+  line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+button{font:inherit}
+header{
+  background:var(--white);
+  border-bottom:1px solid #e6dcc9;
+  padding:16px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:15px;
+  flex-wrap:wrap;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.brand{
+  font-family:Georgia,serif;
+  font-size:21px;
+  font-weight:bold;
+  letter-spacing:1px;
+  color:var(--green);
+}
+.brand span{color:var(--gold)}
+nav{display:flex;gap:19px;flex-wrap:wrap;font-size:14px}
+nav a:hover{color:var(--gold)}
+.hero{
+  background:linear-gradient(115deg,#253c32,#3d5042);
+  color:white;
+  padding:75px 7%;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+}
+.eyebrow{
+  color:#e4c58d;
+  letter-spacing:3px;
+  font-size:12px;
+  font-weight:bold;
+}
+.hero h1{
+  font-family:Georgia,serif;
+  font-size:clamp(38px,5vw,64px);
+  line-height:1.12;
+  margin:15px 0;
+}
+.hero p{color:#e3e7df;max-width:550px}
+.hero-art{
+  min-height:310px;
+  border:1px solid #c6a66e;
+  border-radius:5px;
+  background:
+    linear-gradient(135deg,#f4eddfcc,#b99d70aa),
+    repeating-linear-gradient(120deg,#fff 0px,#eee4d2 2px,#fff 5px);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  color:var(--green);
+  padding:25px;
+}
+.hero-art div{border:1px solid #b89555;padding:35px 20px;width:85%}
+.hero-art strong{font:30px Georgia,serif;display:block}
+.hero-art small{letter-spacing:3px}
+.btn{
+  display:inline-block;
+  background:var(--gold);
+  color:#fff;
+  padding:12px 19px;
+  border-radius:3px;
+  font-weight:bold;
+  margin:12px 8px 0 0;
+  border:1px solid var(--gold);
+}
+.btn:hover{background:#98763e}
+.btn-light{background:transparent;border-color:#e3c58d;color:white}
+section{padding:65px 7%}
+.heading{text-align:center;margin-bottom:35px}
+.heading h2{
+  font:34px Georgia,serif;
+  margin:0 0 8px;
+  color:var(--green);
+}
+.heading p{color:var(--muted);margin:0}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:22px;
+}
+.card{
+  background:var(--white);
+  border:1px solid #e5dac6;
+  overflow:hidden;
+  transition:.25s;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 25px #40321b15}
+.visual{
+  min-height:190px;
+  background:linear-gradient(145deg,#eee5d5,#d5c5a7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:20px;
+  text-align:center;
+  color:var(--green);
+}
+.visual span{
+  font:26px Georgia,serif;
+  border-bottom:1px solid var(--gold);
+  padding:12px;
+}
+.card-content{padding:20px}
+.card h3{font:22px Georgia,serif;margin:0 0 7px;color:var(--green)}
+.card p{font-size:14px;color:var(--muted);margin:5px 0 13px}
+.gold-link{color:#98763e;font-weight:bold;font-size:14px}
+.gold-link:hover{text-decoration:underline}
+.model-tag{
+  color:#9b7a40;
+  font-size:11px;
+  letter-spacing:2px;
+  font-weight:bold;
+}
+.price{font-weight:bold;color:var(--green);font-size:14px}
+.band{
+  background:#eee6d7;
+}
+.band-inner{
+  background:var(--green);
+  color:white;
+  padding:38px;
+  text-align:center;
+}
+.band-inner h2{font:32px Georgia,serif;margin:0 0 8px}
+.band-inner p{color:#e1e5dc}
+.inner-hero{
+  background:linear-gradient(120deg,#293e33,#4b5c4d);
+  color:white;
+  padding:48px 7%;
+}
+.inner-hero h1{font:42px Georgia,serif;margin:5px 0}
+.inner-hero p{color:#e1e5dc}
+.breadcrumb{font-size:13px;color:#e3c58d}
+.product-note{
+  background:#fffefa;
+  border-left:3px solid var(--gold);
+  padding:14px 18px;
+  color:#666;
+  margin-bottom:25px;
+  font-size:14px;
+}
+.back-link{display:inline-block;color:#8d6e39;font-weight:bold;margin-bottom:20px}
+.contact{
+  background:var(--green);
+  color:white;
+  padding:35px;
+}
+.contact h2{font:30px Georgia,serif;margin-top:0}
+.contact p{color:#e2e5dc}
+.contact .btn-light{color:white}
+footer{
+  background:#1c2d25;
+  color:#e9e4d9;
+  padding:28px 7%;
+  font-size:13px;
+}
+.float{
+  position:fixed;
+  bottom:18px;
+  right:16px;
+  background:#16864b;
+  color:white;
+  border-radius:30px;
+  padding:13px 18px;
+  font-weight:bold;
+  box-shadow:0 3px 12px #0003;
+  z-index:20;
+}
+.hidden{display:none!important}
+@media(max-width:700px){
+  header{padding:14px 5%}
+  nav{gap:12px;font-size:12px}
+  .hero{grid-template-columns:1fr;padding:48px 6%}
+  .hero-art{min-height:230px}
+  .grid{grid-template-columns:1fr 1fr;gap:12px}
+  .card-content{padding:14px}
+  .card h3{font-size:18px}
+  .visual{min-height:145px}
+  section{padding:45px 6%}
+  .inner-hero h1{font-size:34px}
+}
+@media(max-width:420px){
+  .grid{grid-template-columns:1fr}
+  .brand{font-size:18px}
+}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="brand" href="#" onclick="goHome()">PATEL <span>SANITARY WARE</span></a>
+  <nav>
+    <a href="#" onclick="goHome()">Home</a>
+    <a href="#bhajwad">Bhajwad</a>
+    <a href="#plumbtech">Plumbtech</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="app"></main>
+
+<footer>
+  <strong>PATEL SANITARY WARE</strong>
+  <p>Lawyer Chinnattambi Street, Kondithope, Chennai, Tamil Nadu, India</p>
+  <p>© <span id="year"></span> Patel Sanitary Ware. All rights reserved.</p>
+</footer>
+
+<a class="float" target="_blank" rel="noopener"
+href="https://wa.me/919768317761?text=Hello%20Patel%20Sanitary%20Ware%2C%20I%20have%20a%20product%20enquiry.">
+WhatsApp ↗</a>
+
+<script>
+const phone = "919768317761";
+
+const models = ["Fusion","Andy","Tarim"];
+
+const productTypes = [
+  "Short Body Tap",
+  "Long Body Tap",
+  "Angle Valve",
+  "Washing Machine Tap",
+  "Sink Cock",
+  "Shower"
+];
+
+const categories = [
+  {
+    name:"Plumbtech PVC Taps & Fittings",
+    description:"Explore Plumbtech PVC taps and fittings.",
+    items:["PVC Taps","PVC Fittings"]
+  },
+  {
+    name:"Bhajwad Steel Sinks",
+    description:"Explore Bhajwad steel sink options.",
+    items:["Steel Sinks"]
+  },
+  {
+    name:"Bhajwad Showers",
+    description:"Explore Bhajwad shower options.",
+    items:["Showers"]
+  },
+  {
+    name:"Plastic Seat Covers",
+    description:"Ask about available plastic seat covers.",
+    items:["Plastic Seat Covers"]
+  },
+  {
+    name:"Plastic Water Tanks",
+    description:"Ask about available plastic water tanks.",
+    items:["Plastic Water Tanks"]
+  }
+];
+
+function whatsapp(message){
+  return "https://wa.me/"+phone+"?text="+encodeURIComponent(message);
+}
+
+function visual(title){
+  return `<div class="visual"><span>${title}</span></div>`;
+}
+
+function card(title,description,link,label="Explore →"){
+  return `<article class="card">
+    ${visual(title)}
+    <div class="card-content">
+      <h3>${title}</h3>
+      <p>${description}</p>
+      <a class="gold-link" href="${link}">${label}</a>
+    </div>
+  </article>`;
+}
+
+function goHome(){
+  location.hash="";
+}
+
+function home(){
+  const app=document.getElementById("app");
+  app.innerHTML=`
     <div class="hero">
       <div>
-        <p>YOUR LOCAL SANITARYWARE SHOP</p>
-        <h1>Make Your Bathroom Feel Special.</h1>
-        <p>Explore sanitaryware for your home. Contact Patel Sanitary Ware in Kondithope, Chennai, to enquire about products, models and prices.</p>
-        <a class="btn" href="#products">Explore Products</a>
-        <a class="btn btn-outline" href="https://wa.me/919768317761?text=Hello%20Patel%20Sanitary%20Ware%2C%20I%20want%20to%20enquire%20about%20your%20products.">WhatsApp Us</a>
+        <div class="eyebrow">WELCOME TO PATEL SANITARY WARE</div>
+        <h1>Discover Quality. Experience Elegance.</h1>
+        <p>Explore sanitaryware, bathroom fittings and product ranges at Patel Sanitary Ware, Kondithope, Chennai.</p>
+        <a class="btn" href="#bhajwad">Explore Bhajwad</a>
+        <a class="btn btn-light" href="${whatsapp("Hello Patel Sanitary Ware, I want to enquire about your products.")}" target="_blank">WhatsApp Us</a>
       </div>
-      <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=900&q=80" alt="Modern bathroom inspiration">
+      <div class="hero-art">
+        <div>
+          <small>QUALITY • STYLE • TRUST</small>
+          <strong>Patel Sanitary Ware</strong>
+          <small>YOUR SANITARYWARE DESTINATION</small>
+        </div>
+      </div>
     </div>
 
-    <section id="products">
+    <section id="bhajwad">
       <div class="heading">
-        <h2>Explore Our Products</h2>
-        <p class="muted">Ask us about available models and prices.</p>
+        <div class="eyebrow">OUR PRODUCT RANGE</div>
+        <h2>Bhajwad Collection</h2>
+        <p>Choose a model to explore its product enquiry options.</p>
       </div>
-      <div class="products">
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=700&q=80" alt="Bathroom basin inspiration" loading="lazy">
-          <div>
-            <h3>Wash Basins</h3>
-            <p class="muted">Explore wash basin options for your bathroom.</p>
-            <a href="https://wa.me/919768317761?text=Hello%2C%20I%20want%20to%20enquire%20about%20wash%20basins.">Enquire on WhatsApp →</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80" alt="Bathroom design inspiration" loading="lazy">
-          <div>
-            <h3>Toilets & WC</h3>
-            <p class="muted">Ask about toilet styles and available models.</p>
-            <a href="https://wa.me/919768317761?text=Hello%2C%20I%20want%20to%20enquire%20about%20toilets.">Enquire on WhatsApp →</a>
-          </div>
-        </article>
-        <article class="card">
-          <img src="https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=700&q=80" alt="Modern bathroom interior" loading="lazy">
-          <div>
-            <h3>Bathroom Fittings</h3>
-            <p class="muted">Contact us about available bathroom fittings.</p>
-            <a href="https://wa.me/919768317761?text=Hello%2C%20I%20want%20to%20enquire%20about%20bathroom%20fittings.">Enquire on WhatsApp →</a>
-          </div>
-        </article>
+      <div class="grid">
+        ${models.map(m=>card(
+          "Bhajwad "+m,
+          "Explore product types and enquire about the "+m+" model.",
+          "#model-"+m.toLowerCase()
+        )).join("")}
       </div>
     </section>
 
-    <section class="visit">
-      <div class="heading">
-        <h2>Visit Our Shop</h2>
-        <p class="muted">We are located in Kondithope, Chennai.</p>
+    <section class="band" id="plumbtech">
+      <div class="band-inner">
+        <div class="eyebrow">PVC RANGE</div>
+        <h2>Plumbtech Taps & Fittings</h2>
+        <p>Explore the Plumbtech PVC product range.</p>
+        <a class="btn" href="#category-plumbtech">Explore Plumbtech</a>
       </div>
-      <div class="contact" id="contact">
+    </section>
+
+    <section>
+      <div class="heading">
+        <div class="eyebrow">MORE TO EXPLORE</div>
+        <h2>Other Categories</h2>
+        <p>Enquire about product details and availability.</p>
+      </div>
+      <div class="grid">
+        ${categories.slice(1).map((c,i)=>card(
+          c.name,c.description,"#category-"+(i+1)
+        )).join("")}
+      </div>
+    </section>
+
+    <section class="visit" id="contact">
+      <div class="heading">
+        <h2>Visit Our Showroom</h2>
+        <p>We look forward to helping you with your product enquiries.</p>
+      </div>
+      <div class="contact">
         <h2>Patel Sanitary Ware</h2>
         <p>Lawyer Chinnattambi Street, Kondithope, Chennai, Tamil Nadu, India</p>
         <p>WhatsApp: +91 97683 17761</p>
-        <a class="btn" href="https://wa.me/919768317761?text=Hello%20Patel%20Sanitary%20Ware%2C%20I%20have%20a%20product%20enquiry.">Send an Enquiry</a>
-        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Patel+Sanitary+Ware%2C+Lawyer+Chinnattambi+Street%2C+Kondithope%2C+Chennai">Get Directions</a>
+        <a class="btn" target="_blank" href="${whatsapp("Hello Patel Sanitary Ware, I have a product enquiry.")}">Send Enquiry ↗</a>
+        <a class="btn btn-light" target="_blank" rel="noopener"
+        href="https://www.google.com/maps/search/?api=1&query=Patel+Sanitary+Ware%2C+Lawyer+Chinnattambi+Street%2C+Kondithope%2C+Chennai">Get Directions ↗</a>
       </div>
     </section>
-  </main>
+  `;
+}
 
-  <footer>
-    © <span id="year"></span> Patel Sanitary Ware · Kondithope, Chennai
-  </footer>
-  <a class="float" href="https://wa.me/919768317761?text=Hello%20Patel%20Sanitary%20Ware%2C%20I%20have%20a%20product%20enquiry.">WhatsApp ↗</a>
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+function modelPage(model){
+  const app=document.getElementById("app");
+  app.innerHTML=`
+    <div class="inner-hero">
+      <div class="breadcrumb"><a href="#" onclick="goHome()">Home</a> / Bhajwad / ${model}</div>
+      <h1>Bhajwad ${model}</h1>
+      <p>Explore product types for this model and ask us about availability.</p>
+    </div>
+    <section>
+      <a class="back-link" href="#" onclick="goHome()">← Back to Home</a>
+      <div class="product-note">Product options shown are for enquiry purposes. Please contact us to confirm the exact model, finish and availability.</div>
+      <div class="grid">
+        ${productTypes.map(type=>card(
+          type,
+          "Bhajwad "+model+" – Price on Request",
+          whatsapp("Hello Patel Sanitary Ware, I want to enquire about Bhajwad "+model+" "+type+". Please share availability and price."),
+          "Enquire on WhatsApp →"
+        )).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function categoryPage(index){
+  const c=categories[index];
+  const app=document.getElementById("app");
+  app.innerHTML=`
+    <div class="inner-hero">
+      <div class="breadcrumb"><a href="#" onclick="goHome()">Home</a> / Categories</div>
+      <h1>${c.name}</h1>
+      <p>${c.description}</p>
+    </div>
+    <section>
+      <a class="back-link" href="#" onclick="goHome()">← Back to Home</a>
+      <div class="product-note">Price on Request. Contact the shop to confirm product details and availability.</div>
+      <div class="grid">
+        ${c.items.map(item=>card(
+          item,
+          "Price on Request",
+          whatsapp("Hello Patel Sanitary Ware, I want to enquire about "+item+". Please share details and price."),
+          "Enquire on WhatsApp →"
+        )).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function render(){
+  const route=decodeURIComponent(location.hash.slice(1));
+  if(route.startsWith("model-")){
+    const model=models.find(m=>m.toLowerCase()===route.slice(6));
+    if(model){modelPage(model);return;}
+  }
+  if(route==="category-plumbtech"){categoryPage(0);return;}
+  if(route.startsWith("category-")){
+    const index=Number(route.slice(9));
+    if(Number.isInteger(index)&&index>=1&&index<categories.length){
+      categoryPage(index);return;
+    }
+  }
+  home();
+  if(route==="bhajwad"||route==="plumbtech"||route==="contact"){
+    setTimeout(()=>{
+      const el=document.getElementById(route);
+      if(el)el.scrollIntoView();
+    },50);
+  }
+}
+
+document.getElementById("year").textContent=new Date().getFullYear();
+window.addEventListener("hashchange",render);
+render();
+</script>
 </body>
 </html>
